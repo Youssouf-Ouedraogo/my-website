@@ -1,0 +1,358 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.3/fotorama.css");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+.header {
+  background: linear-gradient(to left, #8942a8, #ba382f);
+  display: block;
+  width: 100%;
+  justify-content: flex-end;
+  text-align: right;
+}
+.header > input,
+.header > label
+{
+  display: none;
+}
+body {
+  position: relative;
+}
+.header > .nav {
+  display: inline-block;
+  width: 68%;
+  padding: 16px;
+}
+.header > .nav > .nav_links {
+  display: inline-block;
+  width: 70%;
+  text-align: left;
+}
+.header > .nav > .nav_links > li
+{
+  display: inline-block;
+  padding: 0 20px;
+}
+.header > .nav > .nav_links > li > a
+{
+  color: white;
+  font-style: sans-serif;
+  text-decoration: none;
+  font-size: 200%;
+  font-weight: bold;
+}
+
+.projects {
+  display: none;
+}
+
+.blog {
+  display: none;
+}
+.project-desc{
+  display: none;
+}
+
+.projects:target{
+  display: block;
+}
+.blog:target{
+  display: block;
+}
+
+.about{
+  text-align: justify;
+  display: inline-block;
+  vertical-align: bottom;
+
+
+}
+.story{
+  justify-content: center;
+  padding-top: 20px;
+  padding-right: 20px;
+  display: none;
+}
+.story > .fotorama {
+  display: inline-block;
+  width: 45%;
+  height: 800px;
+}
+
+.story > .about {
+  font-size: 150%;
+  padding-left: 50px;
+  padding-right: 10px;
+  line-height: 200%;
+  display: inline-block;
+  width: 50%;
+}
+
+
+/* FEI show it only when it is targeted */
+.story:target {
+  display: flex;
+}
+
+.contact{
+  height: 100px;
+  padding: 40px 10%;
+}
+
+.fa {
+  font-size: 300%;
+  text-decoration: none;
+  padding: 8px;
+  color: steelblue;
+}
+.project-desc{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects {
+  width: 60%;
+  height: 100%;
+}
+
+.projects{
+  text-align: justify;
+  font-size: 150%;
+  line-height: 1.5;
+  color: grey;
+}
+
+.projects h3{
+  padding-left: 70px;
+  font-size: 120%
+}
+
+
+.fotorama a {
+  text-decoration: none;
+  font-size: 200%;
+  color: white;
+  display: block;
+  width: 140px;
+  padding-left:35px;
+  padding-top:  5px;
+  border:3px solid blue;
+  margin-left: 40px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.mybooks{
+  margin-left: 50px;
+}
+.soccer{
+  height:700px;
+  width: 500px;
+}
+
+.main_hobbies{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.myHobbies{
+  width: 60%;
+  height: 100%;
+}
+
+.myHobbies{
+  text-align: justify;
+  font-size: 150%;
+  line-height: 1.5;
+  color: grey;
+}
+
+.myHobbies h3{
+  padding-left: 70px;
+  font-size: 120%
+}
+
+.book-container{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.books{
+  width: 60%;
+  height: 100%;
+}
+
+.books{
+  text-align: justify;
+  font-size: 150%;
+  line-height: 1.5;
+  color: grey;
+}
+
+.books h3{
+  padding-left: 70px;
+  font-size: 120%
+}
+
+.books img{
+  height: 500px;
+  width: 350px;
+}
+
+.education-container{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.education-list{
+  text-align: justify;
+  font-size: 150%;
+  line-height: 1.5;
+  color: grey;
+}
+.education-list img{
+  height: 500px;
+  width: 500px;
+}
+.education-list h3{
+  padding-left: 70px;
+  font-size: 120%
+}
+.education-list{
+  width: 60%;
+  height: 100%;
+}
+a{
+  text-decoration: none;
+}
+img:hover{
+  transform: scale(1.5);
+    transition: background-size ease-in-out 1s;
+}
+.animation-area{
+    background: linear-gradient(to left, #8942a8, #ba382f);
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    position: absolute;
+}
+
+.box-area{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.box-area li{
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 20s linear infinite;
+  bottom: -150px;
+}
+
+.box-area li:nth-child(1){
+  left: 86%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+.box-area li:nth-child(2){
+  left: 12%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 1.5s;
+  animation-duration: 10s;
+}
+
+.box-area li:nth-child(3){
+  left: 70%;
+  width: 100px;
+  height: 100px;
+  animation-delay: 5.5s;
+}
+
+.box-area li:nth-child(4){
+  left: 42%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 15s;
+}
+
+.box-area li:nth-child(5){
+  left: 65%;
+  width: 40px;
+  height: 40px;
+  animation-delay: 0s;
+}
+
+.box-area li:nth-child(6){
+  left: 15%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3.5s;
+}
+
+@keyframes animate {
+  0%{
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(-800px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 950px) {
+  .header > #nav + label + .nav {
+      display: none;
+      width: 320px;
+      padding: 16px;
+      background-color: blue;
+    }
+
+    .header > #nav:checked + label + .nav {
+      display: block;
+    }
+  .header > .nav > .nav_links {
+      display: block;
+      width: 100%;
+      text-align: left;
+  }
+
+  .header > .nav > .nav_links > li {
+      display: block;
+      margin: 16px 4px 0 12px;
+      font-size: 130%
+  }
+  .header > .nav {
+      position: absolute;
+      top: 48px;
+      right: 0;
+      z-index: 100;
+      text-align: left;
+    }
+
+  .header > label {
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      padding: 16px;
+      color: white;
+  }
+
+  .header > .nav > .nav_links > li > a{
+      color: white;
+    }
+}

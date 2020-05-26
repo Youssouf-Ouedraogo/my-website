@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+    <html lang="en" dir="ltr">
+      <head>
+        <meta charset="utf-8">
+        <title>Youssouf Ouedraogo</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+          <div class="header">
+<!-- add checkbox and label to hide/show navbar -->
+          <input type="checkbox" id="nav" />
+          <label for="nav" class="material-icons">dehaze</label>
+
+              <div class="nav">
+                <ul class = "nav_links">
+                    <li><a href="#aboutme" id="abme">About me</a></li>
+                    <li><a href="Resume.pdf" target="_blank">Resume</a></li>
+                    <li><a href="#myprojects" id="prj">Projects</a></li>
+                    <li><a href="#myblog"  id="blg">Blog</a></li>
+                  </ul>
+                </div>
+              </div>
+        </header>
+        <div class="animation-area">
+          <ul class="box-area">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      <div id="aboutme" class="story">
+        <div class="fotorama" data-autoplay="3000" data-loop="true"
+          data-allowfullscreen="true" data-nav="thumbs" data-fit="contain">
+              <div data-img="https://i.imgur.com/nphd5NV.jpg" alt="Some High school friends and I"> <a href="education.html" target="_blank">Learn More about my education</a></div>
+              <div data-img="https://i.imgur.com/CTKDIKx.jpg" alt="Me playing Soccer"> <a href="hobbies.html" target="_blank">Learn More about my Hobbies</a></div>
+              <div class="para" data-img="https://i.imgur.com/Ana96KY.jpg" alt ="Le Parachutage"><a class ="mybooks" href="books.html" target="_blank">Learn More about books that I like</a></div>
+        </div>
+        <span class="about"> I was born and raised in a small village in Burkinka Faso.
+    Growing up there, my access to technologies was limited. I, however, was interested and learning how they work. I used my dad phone to learn how to use a phone.
+    I was able to learn to the point that people would come to see because they were having some issues with their phones.
+    After graduating high school, I got the opportunity to come to study in the US where technology is a big thing. It was like living the dream.
+    So, I decided to challenge myself to take a computer science class. I then read a book called Software in which learned more about how software impact people’s lives on a daily basis.
+    I realized that computer science was not just about learning how computers work but also how to use them to solve problems.
+    So, I decided to major in computer science and learn more about how to use computers to solve problems.
+    Now I was able to solve a problem using computers by building an educational app that shares the legacy of one of the
+    presidents of Burkina Faso who was a great leader but is known by a lot of people which you can download <a href="https://play.google.com/store/apps/details?id=com.youssouf.thomassankara" target="_blank">here</a>.
+    Currently I am looking to combine my passion for Software development and my ability to work as part of a team or individual if need be to get a job as a Software Developer. You can see my resume <a href="Resume.pdf" target="_blank">here</a>.
+
+    As far as my future goals are concerned, In 2 to 3 years, I would like to have mastered the main languages and framework of my future company and know how to make them perform as efficiently as possible.
+    To do this, I would like to have gone through several team-based development cycles, experience scaling issues with different architectures and frameworks
+    and have worked out how to solve them as part of a team doing the development. From there I will see where my next step would be.
+        </span>
+    </div>
+    <div class="project-desc"  >
+      <div class="projects" id="myprojects">
+        <h3>RU Parking(Android Studio, Java, NoSql, Firebase) </h3>
+        <p>Student at Rutgers University have issues knowing when and where
+           they can park with their parking permit. So, I decided to research on the problem. I conducted both online and in person interviews.
+           I realized that the problem was common among students who park on campus. So, I conducted another vage of survey on the features
+           that would be useful to them. Based on the results of those surveys, I built a mobile app only list the parking lots they are allow to park
+           on at any point in time of the day. I also implemented a waze like system to allow them to report parking availibity to other users.
+           Using google Map Api, I included maps of the parking lots so that students can easily drive to their locations.
+           you can find the app on <a href="https://play.google.com/store/apps/details?id=com.manoideveloppers.myapplication">Google Play</a>.
+           I am however still working on the iOS version of the app.
+        </p>
+        <h3>Facial and digit recognition(Python, Pycharm)</h3>
+        <p>This was a team base project. the goal was to use machine learning to tell wether
+           a given picture was a photo or not or wether it is a digit or not.
+          I was working in a group of 3 people. I solved the problem by implementing a percepton and the
+          mira algorithm. For the both algorithm I just had a vector holding the features and the weight of
+          each feature. The score is the dot product of feature vector and the weight vector.
+          the equation of the predicted label is:
+          <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dc5b83e57ad0de11c737317732783fcf03b8cf1b" alt="percepton predicted label">
+          if our prediction is right, we pass to the next training image. On the other hand if our prediction is wrong the adjust the weight. The way we
+          adjust the weight is the only difference between the percepton and the mira algorithm. For the percepton, I adjust the weight as following:</p>
+          <div align="center">
+            <img src="http://inst.eecs.berkeley.edu/~cs188/sp11/projects/classification/images/img40.png" alt="">
+          </div>
+          <div align="center">
+            <img src="http://inst.eecs.berkeley.edu/~cs188/sp11/projects/classification/images/img41.png" alt="">
+          </div>
+          <p>increase the weight of label that was supposed to predict the right label by its feature and decrease the weight
+             of the label that made the wrong prediction by its feature. For the Mira, in case of a wrong prediction the weight is adjust as following:</p>
+             <div align="center">
+               <img src="http://inst.eecs.berkeley.edu/~cs188/sp11/projects/classification/images/img59.png" alt="">
+             </div>
+             <div align="center">
+               <img src="http://inst.eecs.berkeley.edu/~cs188/sp11/projects/classification/images/img60.png" alt="">
+             </div>
+             <p>where </p>
+             <div align="center">
+               <img src="http://inst.eecs.berkeley.edu/~cs188/sp11/projects/classification/images/img67.png" alt="">
+             </div>
+          <p>You can find the full project <a href="https://github.com/Youssouf-Ouedraogo/ImageClassifier">here</a></p>
+
+        <h3>A* Algorithm Implementation(Python, Pycharm)</h3>
+        <p>Given a maze, a starting point and a goal, find the shortest path from the starting point to the goal.
+          I achieved that using repeated forward A* and repeated backward A*. Both are the same except their execution. for
+          repeated forward A* the robot will learn the wall as it goes. However, for repeated backward A*, the robot has
+          the full path before moving. A* works as the following: we compute the shortest path from where we are
+           to our destination. Without taking into account the walls we have not encounter. We start following the path until we hit a wall.
+           We add that wall in our list of walls. we compute the shortest path where we are standing now to our destination. This time
+           however, we eliminate the possibility of passing through the wall. We repeat this process until we get to our goal just like with the animation below
+         </p>
+          <div align="center">
+            <img src="https://i.stack.imgur.com/pBdDj.gif" alt="">
+          </div>
+        <p>you can find <a href="https://github.com/Youssouf-Ouedraogo/A-star-Project">the full project</a>on my github account.</p>
+        <h3>Educational App(Android Studio, Java)</h3>
+        <p> Thomas Sankara was an examplary leader of Burkina Faso.
+          However he is not known but lot of people So I decided to build a mobile app to promote his leacy.
+          I did my research first, then translate my research into French and English, designed the features and implemented
+          those feature. After a series of testing, I publish the app on Google Play and it current has over 10,000 downloads.
+          you can download the app <a href="https://play.google.com/store/apps/details?id=com.youssouf.thomassankara">on google play</a> as well.
+        </p>
+        <h3>Huffman Encoding, decoding(X2go, C)</h3>
+        <p>Given a file I had to convert it to 1s and 0s and store it in a file.
+           When I take those 1s and 0s file, I should be able to convert it to the original text.
+          To do so. I created an intermediate codebook file. That file contains all of the words with their corresponding 1s and 0s patterns.
+          Once I have that intermediate codebook, it became easy to go back and forth between the encoded file and the original.
+          To get the intermediate file, I used Huffman tree. You can download the full code from my github <a href="https://github.com/Youssouf-Ouedraogo/Huffman_Encoding">here</a>
+
+         </p>
+      </div>
+
+    </div>
+    <div class="blog" id="myblog">
+  <p>Blogs coming soon</p>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- load fotorama plugin JavaScript code -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.3/fotorama.js"></script>
+    <div class="contact">
+  <p>Thank you for visiting my website. Here are mon contacts</p>
+  <p>
+    <a href="https://www.linkedin.com/in/youssouf-ouedraogo/" target="_blank"  class="fa fa-linkedin-square"></a>
+    <a href="https://www.facebook.com/ouedraogo.youssouf.545" target="_blank"  class="fa fa-facebook-square"></a>
+      <a href="mailto:youssouf.oued1@gmail.com?subject=Email from your Website" target="_blank" class="fa fa-envelope-square"></a>
+                                                                                                                              <a href="tel:+15102772908" target="_blank" class="fa fa-phone-square"></a>
+    </p>
+  </div>
+  <script src="page.js"></script>
+</body>
+</html>
